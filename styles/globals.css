@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 120px 24px 160px 24px;
+    pointer-events: none;
+    background:#141819;
+  }
+  
+
+  
+ 
+
+  
+@media screen and (max-width: 640px) {
+    .main {
+      padding: 0;
+    }
+  }
+
+
+.app {
+    @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  }
