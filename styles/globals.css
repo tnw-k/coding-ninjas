@@ -57,3 +57,13 @@
       -webkit-text-stroke-width: 0.75px;
       -webkit-text-stroke-color: #F66C3B;
   }
+
+  .explore-btn{
+    box-shadow: 0 4px 8px rgba(241, 117, 34, 0.4); /* Subtle shadow on all sides */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+  }
+  .explore-btn:hover {
+    box-shadow: 0 8px 16px rgba(241, 117, 34, 0.6); 
+    transform: translateY(-2px); 
+  }
