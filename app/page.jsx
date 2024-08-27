@@ -1,3 +1,4 @@
+import Events from "@components/Events/Events"
 import Timeline from "@components/Events/PastEvents"
 import Hero from "@components/Hero"
 
@@ -6,7 +7,7 @@ const Home = () => {
     <div className="w-full  ">
         {/* <Hero /> */}
 <div className="flex justify-center p-4">
-<Timeline/></div>
+<Events/></div>
     </div>
   )
 }
