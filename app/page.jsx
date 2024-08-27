@@ -4,10 +4,8 @@ import Hero from "@components/Hero"
 
 const Home = () => {
   return (
-    <div className="w-full  ">
-        {/* <Hero /> */}
-<div className="flex justify-center p-4">
-<Events/></div>
+    <div className="w-full text-white">
+        <Hero />
     </div>
   )
 }
