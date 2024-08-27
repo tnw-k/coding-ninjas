@@ -10,7 +10,7 @@ const Hero = () => {
     }, []);
   return (isClient &&
     <section className='w-full h-screen '>
-        <div className="absolute top-0 left-0 w-full h-full overlay" ></div>
+        <div className="absolute top-0 left-0 w-full h-screen overlay" ></div>
         <video
             autoPlay 
             loop 
@@ -21,7 +21,7 @@ const Hero = () => {
         </video>
 
         <div 
-            className="w-full md:px-40 px-10 h-full absolute text-center flex-col gap-6 top-0 flex justify-center items-center ">
+            className="w-full md:px-40 px-10 h-screen absolute text-center flex-col gap-6 top-0 flex justify-center items-center ">
             <div className="">
                 <h1 className="title-animation cursor-default red-hat-display-heading font-semibold text-[90px] title-outline mb-10">Coding Ninjas:<br/>
                 KIIT Chapter</h1>
