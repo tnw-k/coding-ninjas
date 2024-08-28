@@ -1,23 +1,35 @@
-import '@styles/globals.css'
 
-export const metadata={
-    title:'Coding Ninjas: KIIT Chapter',
-    description:'',
-}
+import '@styles/globals.css';
+import Navbar from '@components/Navbar';
+import Footer from '@components/Footer';
 
-const RootLayout = ({children}) => {
+export const metadata = {
+  title: 'Coding Ninjas: KIIT Chapter',
+  description: 'Official website for Coding Ninjas: KIIT Chapter',
+};
+
+const RootLayout = ({ children }) => {
   return (
-    <html lang='en'>
-        <body className="bg-[#141819]">
-            <div className='main'>
-                <div className='background'/>
-            </div>
-            <main className='app'>
-                {children}
-            </main>
-        </body>
-    </html>
-  )
-}
+    <html lang="en">
+      <body className="bg-[#141819]">
+        <div className="min-h-screen flex flex-col bg-black text-white">
+          
+          <header className="sticky top-0 z-50">
+            <Navbar />
+          </header>
 
-export default RootLayout
+          <main className="flex-grow">
+            <div className="app">{children}</div>
+          </main>
+
+          <footer className="mt-auto">
+            <Footer />
+          </footer>
+        </div>
+      </body>
+    </html>
+  );
+};
+
+export default RootLayout;
+
