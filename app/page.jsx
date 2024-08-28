@@ -19,10 +19,14 @@ const Home = () => {
   };
   return (
     <div className="w-full text-white">
-        <Popup isOpen={isModalOpen} onClose={closeModal} />
         <Hero />
         <Events />
+
     </div>
+    {/* <div>
+    </div> */}
+  </div>
+    
   )
 }
 

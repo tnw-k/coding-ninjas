@@ -3,7 +3,7 @@ import { FaCalendarAlt } from 'react-icons/fa';
 const timelineData = [
   {
     title: 'Recent Events',
-    date: '2023',
+    date: 'June 2023',
     description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     latest: true,
     downloadLink: '#',
@@ -12,7 +12,7 @@ const timelineData = [
   },
   {
     title: 'Past Events',
-    date: '2022',
+    date: 'August 2022',
     description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     latest: false,
     svgPath1: 'M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z',
@@ -20,7 +20,7 @@ const timelineData = [
   },
   {
     title: 'Past Events',
-    date: '2020',
+    date: 'April 2022',
     description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     latest: false,
     svgPath1: 'M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z',
@@ -32,7 +32,7 @@ const TimelineItem = ({ item, index }) => {
 
   return (
     <div className="flex ">
-      <div className='bg-eventCard lg:w-[700px] sm:w-[600px] w-80  rounded-xl py-1 pt-4 m-4 my-4 px-6 flex flex-col items-center'>
+      <div className='bg-eventCard lg:w-[700px] sm:w-[600px] w-80  rounded-xl py-4 m-4 my-4 px-6 flex flex-col items-center'>
         <li className="">
           <span className="absolute flex items-center justify-center w-10 h-10 bg-orange-500 rounded-full -start-4  ring-8 ring-white dark:ring-[#141819] ">
 
@@ -48,7 +48,7 @@ const TimelineItem = ({ item, index }) => {
             )}
           </h3>
           <time className="block mb-2 text-sm leading-none text-[#f90] font-bold dark:text-gray-500">{item.date}</time>
-          <p className="mb-4 text-base font-normal text-orange-700 dark:text-gray-400">{item.description}</p>
+          <p className="mb-4 text-base font-normal  text-gray-900">{item.description}</p>
       
          </div>
           <div className="sm:w-2/5">
