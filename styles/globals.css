@@ -33,17 +33,18 @@
   }
 
   .overlay{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   .title-animation{
-    color: #F66C3B; /* Fallback color */
+     /* color: #F66C3B;   */
     line-height: 1.1; /* Adjust to ensure no clipping */
-    background: linear-gradient(to bottom right, #F66C3B,#F66C3B, #FBB59D,#F66C3B, #F66C3B);
-    background-size: 400%;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: titleAnimation 5s linear infinite;
+    /* background: linear-gradient(to bottom right, #F66C3B,#F66C3B, #FBB59D,#F66C3B, #F66C3B); */
+    /* background-size: 400%; */
+    /* -webkit-background-clip: text; */
+    /* color: transparent; */
+    /* animation: titleAnimation 5s linear infinite; */
+  
   }
   @keyframes titleAnimation{
     0%{
@@ -57,10 +58,10 @@
     }
   }
 
-  /* .title-outline{
-      -webkit-text-stroke-width: 0.75px;
-      -webkit-text-stroke-color: #ffffff87;
-  } */
+  .title-outline{
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: #000000;
+  }
 
   .explore-btn{
     box-shadow: 0 4px 8px rgba(241, 117, 34, 0.4); /* Subtle shadow on all sides */
@@ -75,4 +76,9 @@
   .bg-eventCard{
 background: linear-gradient(to bottom right,#ffcfbf 19%, #f16c14 104.27%);
 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .videoBlur{
+    filter: blur(5px);
+    -webkit-filter: blur(3px);
   }
