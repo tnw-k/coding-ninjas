@@ -10,7 +10,7 @@ const Hero = () => {
     }, []);
   return (isClient &&
     <section className='w-full h-screen '>
-        <div className="absolute top-0 left-0 z-10 w-full h-full overlay" ></div>
+        <div className="absolute top-0 left-0 z-10 w-full h-screen overlay" ></div>
         <video
             autoPlay 
             loop 
