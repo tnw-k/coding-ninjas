@@ -6,13 +6,13 @@ export default function Footer() {
       className="relative bg-cover bg-no-repeat bg-center w-full min-h-[590px] text-white py-10"
       style={{ backgroundImage: "url('/footer.png')" }}
     >
-      {/* Black overlay for background color */}
+     
       <div className="absolute inset-0 bg-black opacity-75"></div>
       
       <div className="relative container mx-auto px-4 flex flex-col h-full z-10">
         <div className="flex flex-col md:flex-row justify-start items-start mb-8">
           
-          {/* Logo and Text */}
+         
           <div className="flex items-center mb-8 md:mb-0 pl-4 md:pl-8">
             <div className="relative flex-shrink-0 w-[220px] h-[220px]">
               <Image src="/logo.png" alt="Logo" layout="fill" objectFit="contain" />
@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* About Us and Contact Us Sections */}
+          
           <div className="flex flex-col md:flex-row justify-center md:justify-start md:ml-auto mt-[70px]">
             <div className="mr-16 mb-8 md:mb-0 ml-[-650px]">
               <h2 className="text-[#F17522] font-bold text-[24px] md:text-[30px] mb-4">About us</h2>
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Social Media Icons */}
+      
         <div className="flex justify-start space-x-4 ml-4 md:ml-24" style={{ marginTop: '-80px' }}>
           <Image src="/instagram.png" alt="Instagram" width={54} height={54} />
           <Image src="/linkedin.png" alt="LinkedIn" width={54} height={54} />
