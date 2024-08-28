@@ -81,3 +81,14 @@ box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     filter: blur(5px);
     -webkit-filter: blur(3px);
   }
+
+  .event-title{
+    color: #F66C3B;  
+   line-height: 1.1; 
+   background: linear-gradient(to bottom right, #F66C3B,#F66C3B, #FBB59D,#F66C3B, #F66C3B);
+   background-size: 400%;
+   -webkit-background-clip: text;
+   color: transparent;
+   animation: titleAnimation 5s linear infinite;
+ 
+ }
