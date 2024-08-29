@@ -22,12 +22,12 @@ export default function Modal({ isOpen, onClose }) {
     <div className="fixed inset-0 flex items-center justify-center  z-[10000]">
       {/* Overlay */}
       <div 
-        className="fixed inset-0 bg-black opacity-50 z-40" 
+        className="fixed inset-0 bg-black opacity-60 z-40" 
       ></div>
 
       {/* Modal */}
       <div 
-        className="relative sm:mt-10 bg-[#141819] text-white border-4 border-[#F66C3B] rounded-lg p-6 max-w-md w-full z-50"
+        className="relative sm:mt-14 bg-[#141819] text-white border-4 border-[#F66C3B] rounded-xl p-6 max-w-md w-full z-50"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}

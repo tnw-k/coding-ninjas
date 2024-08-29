@@ -37,13 +37,13 @@
   }
 
   .title-animation{
-     /* color: #F66C3B;   */
+     color: #F66C3B;  
     line-height: 1.1; 
-    /* background: linear-gradient(to bottom right, #F66C3B,#F66C3B, #FBB59D,#F66C3B, #F66C3B); */
-    /* background-size: 400%; */
-    /* -webkit-background-clip: text; */
-    /* color: transparent; */
-    /* animation: titleAnimation 5s linear infinite; */
+    background: linear-gradient(to bottom right, #F66C3B,#F66C3B, #FBB59D,#F66C3B, #F66C3B); 
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent;
+     animation: titleAnimation 5s linear infinite;
   
   }
   @keyframes titleAnimation{
@@ -67,6 +67,10 @@
     box-shadow: 0 4px 8px rgba(241, 117, 34, 0.4); /* Subtle shadow on all sides */
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     
+  }
+  .title-div{
+    box-shadow: 15px 15px 30px rgba(241, 117, 34, 0.6); 
+    transform: translateY(-2px); 
   }
   .explore-btn:hover {
     box-shadow: 0 8px 16px rgba(241, 117, 34, 0.6); 
