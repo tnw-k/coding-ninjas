@@ -136,6 +136,9 @@ html, body {
   padding: 0;
   font-family: 'Arial', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 #root, #__next {
   height: 100%;

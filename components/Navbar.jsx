@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav className="flex-row items-center justify-center bg-black relative bg-cover bg-no-repeat bg-center text-white overflow-hidden" style={{ height: '100px' }}>
+    <nav className="flex items-center justify-center bg-black relative bg-cover bg-no-repeat bg-center text-white overflow-hidden" style={{ height: '100px' }}>
       <div className="container mx-auto flex items-center justify-between relative z-20" style={{ marginTop: '-20px' }}> 
         <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="Logo" width={150} height={150} className="mr-2 z-30 relative ml-5" />
+          <Image src="/logo.png" alt="Logo" width={150} height={150} className="z-30 relative mt-5" />
         </Link>
-        <div className="flex justify-center flex-1 space-x-4 nav-items z-10">
+        <div className="flex justify-center flex-1 space-x-2 nav-items z-10">
           <NavItem href="/" text="Home" />
           <NavItem href="/events" text="Events" />
           <NavItem href="/domain" text="Domain" />
@@ -34,6 +34,7 @@ const NavItem = ({ href, text }) => (
 );
 
 export default Navbar;
+
 
 
 
