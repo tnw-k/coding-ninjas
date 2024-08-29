@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Events from "@components/Events/Events"
 import Hero from "@components/Hero"
 import Popup from "@components/Popup";
+import AboutUs from '@components/AboutUs';
 
 const Home = () => {
 
@@ -21,6 +22,7 @@ const Home = () => {
     <div className="w-full text-white">
         <Popup isOpen={isModalOpen} onClose={closeModal} />
         <Hero />
+        <AboutUs/>
         <Events />
     </div>
   )
