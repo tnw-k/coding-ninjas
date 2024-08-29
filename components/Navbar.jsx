@@ -9,11 +9,11 @@ const Navbar = () => {
           <Image src="/assets/images/logo.png" alt="Logo" width={50} height={50} className="mr-2 z-30 relative ml-5" />
         </Link>
         <div className="flex justify-center flex-1 space-x-4 nav-items z-10">
-          <NavItem href="/" text="Home" />
-          <NavItem href="/events" text="Events" />
-          <NavItem href="/domain" text="Domain" />
-          <NavItem href="/contact" text="Contact us" />
-          <NavItem href="/about" text="About Us" />
+        <NavItem href="#home" text="Home" />
+          <NavItem href="#events" text="Events" />
+          <NavItem href="#domain" text="Domain" />
+          <NavItem href="#contact" text="Contact us" />
+          <NavItem href="#about-us" text="About Us" />
         </div>
       </div>
     </nav>

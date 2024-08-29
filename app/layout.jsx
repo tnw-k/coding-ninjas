@@ -14,7 +14,7 @@ const RootLayout = ({ children }) => {
       <body className="bg-[#141819]">
         <div className="min-h-screen flex flex-col bg-black text-white">
           
-          <header className="sticky top-0 z-50">
+          <header id="home" className="sticky top-0 z-50">
             <Navbar />
           </header>
 
