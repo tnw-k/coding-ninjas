@@ -159,3 +159,65 @@ footer {
   }
 
 }
+
+/* about us */
+
+.font-red-hat-display {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.about-us-title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #FF6B00;
+  display: inline-block;
+  padding-top: 2.4rem;
+  padding-left: 2.4rem;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+/* Container for the text content */
+.text-container {
+  max-width: 40%;
+  position: relative;
+  padding-right: 2rem;
+
+  /* width: 50%; */
+  padding-left: 2rem;
+}
+
+.text-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+}
+
+.image-container {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+
+.section-content {
+  display: inline-block;
+  vertical-align: top;
+}

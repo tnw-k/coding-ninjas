@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        BebasNueue: ["Bebas Neue", "sans-serif"]
+        BebasNueue: ["Bebas Neue", "sans-serif"],
+        'red-hat-display': ['Red Hat Display', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
