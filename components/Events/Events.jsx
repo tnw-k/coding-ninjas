@@ -7,7 +7,8 @@ function Events() {
 <h1 className="text-center text-6xl font-bold event-title ">      Our Events </h1>
 <div classNam="flex justify-center mx-auto">
 <Timeline/>
-</div>    </div>
+</div>  
+  </div>
   )
 }
 
