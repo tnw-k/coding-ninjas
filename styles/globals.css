@@ -57,11 +57,11 @@
       background-position: top left;
     }
   }
-
+/* 
   .title-outline{
       -webkit-text-stroke-width: 3px;
       -webkit-text-stroke-color: #000000;
-  }
+  } */
 
   .explore-btn{
     box-shadow: 0 4px 8px rgba(241, 117, 34, 0.4); /* Subtle shadow on all sides */
@@ -75,6 +75,7 @@
 
   .bg-eventCard{
 background: linear-gradient(to bottom right,#ffcfbf 19%, #f16c14 104.27%);
+/* background-color: #707070; */
 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
