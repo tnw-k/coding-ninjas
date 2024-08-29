@@ -99,7 +99,7 @@ box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .nav-items {
   font-family: 'Red Hat Display', sans-serif;
-  font-weight: 900;
+  font-weight: 750;
   font-size: 25px;
   line-height: 18px;
   color: rgba(255, 255, 255, 0.919);
@@ -109,13 +109,6 @@ box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
 }
 
-.puzzle-background {
-  background-image: url('/puzzle-background.png');
-  background-repeat: repeat-x;
-  background-position: bottom;
-  opacity: 0.2;
-  pointer-events: none;
-}
 
 .relative.z-20 img {
   position: relative;
@@ -142,6 +135,9 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
 }
 
 #root, #__next {
@@ -170,4 +166,66 @@ footer {
   background-image: radial-gradient(circle at center, #fef1e2, #f5e6da, #ebe4dcbb, #c0b9b3, #f9e2d4);
 /* border: 4px solid #f16c14; */
 box-shadow: 0 4px 8px rgba(241, 117, 34, 0.4);
+}
+
+/* about us */
+
+.font-red-hat-display {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.about-us-title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #FF6B00;
+  display: inline-block;
+  padding-top: 2.4rem;
+  padding-left: 2.4rem;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+/* Container for the text content */
+.text-container {
+  max-width: 40%;
+  position: relative;
+  padding-right: 2rem;
+
+  /* width: 50%; */
+  padding-left: 2rem;
+}
+
+.text-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+}
+
+.image-container {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+
+.section-content {
+  display: inline-block;
+  vertical-align: top;
 }

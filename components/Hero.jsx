@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link";
 import { useState,useEffect } from "react";
 
 const Hero = () => {
@@ -30,7 +31,9 @@ const Hero = () => {
                 </h1>
             </div>
             <p className="text-opacity-60 text-xl text-white cursor-default sm:mx-52">Empowering students to have fun while learning, coding, and developing together across diverse tech and creative domains.</p>
-            <button className="red-hat-display-heading explore-btn cursor-pointer text-[#F17522] rounded-xl px-4 py-2  bg-[#141819] border-4 text-xl border-[#F17522]">Explore More</button>            
+            <Link href="#about-us">
+              <button className="red-hat-display-heading explore-btn cursor-pointer text-[#F17522] rounded-xl px-4 py-2  bg-[#141819] border-4 text-xl border-[#F17522]">Explore More</button>            
+            </Link>
         </div>
     </section>
   )
