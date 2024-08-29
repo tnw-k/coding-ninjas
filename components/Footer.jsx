@@ -4,7 +4,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer
-      id="contact" className="relative bg-cover bg-no-repeat bg-center w-full min-h-[450px] text-white py-10" // Adjusted height to 400px
+      id="contact"
+      className="relative bg-cover bg-no-repeat bg-center w-full min-h-[450px] text-white py-10"
       style={{ backgroundImage: "url('/footer.png')" }}
     >
       <div className="absolute inset-0 bg-black opacity-75"></div>
@@ -30,7 +31,6 @@ export default function Footer() {
               <h2 className="text-[#F17522] font-bold text-[24px] md:text-[30px] mb-4">About us</h2>
               <div className="text-[#E3E3E3]/[0.65] text-[15px] md:text-[15px] leading-loose flex-col">
                 <p><a href="#about-us">Info</a></p>
-                
               </div>
             </div>
 
@@ -38,15 +38,13 @@ export default function Footer() {
               <h2 className="text-[#F17522] font-bold text-[24px] md:text-[30px] mb-4">Contact us</h2>
               <div className="text-[#E3E3E3]/[0.65] text-[15px] md:text-[15px] leading-loose">
                 <p>Phone: +91-9051662628</p>
-                <p> Email: queries.codingninjaskiitchapter@gmail.com</p>
+                <p>Email: queries.codingninjaskiitchapter@gmail.com</p>
               </div>
             </div>
           </div>
         </div>
 
-        
         <SocialMediaLinks />
-        
       </div>
     </footer>
   );
@@ -55,15 +53,27 @@ export default function Footer() {
 const SocialMediaLinks = () => {
   return (
     <div className="flex justify-start space-x-4 ml-4 md:ml-24" style={{ marginTop: '-80px' }}>
-      <Link href="https://www.instagram.com/coding.ninjas.kiit?igsh=ZzZjMWp2M2oxbHk2" target="_blank" rel="noopener noreferrer">
-        <Image src="/instagram.png" alt="Instagram" width={54} height={54} />
-      </Link>
-      <Link href="https://www.linkedin.com/company/coding-ninjas-kiit/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
-        <Image src="/linkedin.png" alt="LinkedIn" width={54} height={54} />
-      </Link>
-      <Link href="https://www.facebook.com/codingninjas?utm_source=branding&utm_medium=facebooklinktree&utm_campaign=face_book" target="_blank" rel="noopener noreferrer">
-        <Image src="/facebook.png" alt="Facebook" width={54} height={54} />
-      </Link>
+      <SocialMediaLink href="https://www.instagram.com/coding.ninjas.kiit?igsh=ZzZjMWp2M2oxbHk2" src="/instagram.png" alt="Instagram" />
+      <SocialMediaLink href="https://www.linkedin.com/company/coding-ninjas-kiit/?originalSubdomain=in" src="/linkedin.png" alt="LinkedIn" />
+      <SocialMediaLink href="https://www.facebook.com/codingninjas?utm_source=branding&utm_medium=facebooklinktree&utm_campaign=face_book" src="/facebook.png" alt="Facebook" />
     </div>
+  );
+};
+
+const SocialMediaLink = ({ href, src, alt }) => {
+  return (
+    <Link 
+      href={href} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="block w-[54px] h-[54px] relative hover:opacity-80 transition-opacity"
+    >
+      <Image 
+        src={src} 
+        alt={alt} 
+        layout="fill" 
+        objectFit="contain"
+      />
+    </Link>
   );
 };
