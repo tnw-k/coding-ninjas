@@ -38,7 +38,7 @@
 
   .title-animation{
      /* color: #F66C3B;   */
-    line-height: 1.1; /* Adjust to ensure no clipping */
+    line-height: 1.1; 
     /* background: linear-gradient(to bottom right, #F66C3B,#F66C3B, #FBB59D,#F66C3B, #F66C3B); */
     /* background-size: 400%; */
     /* -webkit-background-clip: text; */
@@ -102,7 +102,7 @@ box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 750;
   font-size: 25px;
   line-height: 18px;
-  color: rgba(255, 255, 255, 0.919);
+  /* color: rgba(255, 255, 255, 0.919); */
   text-align: center;
   width: auto;
   height: relative;
@@ -129,8 +129,8 @@ box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 html, body {
-  background-color: #000000;
-  color: white;
+  /* background-color: #000000; */
+  /* color: white; */
   min-height: 100%;
   margin: 0;
   padding: 0;

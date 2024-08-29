@@ -4,10 +4,22 @@ import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
 
 export default function Modal({ isOpen, onClose }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'; // Disable scrolling
+    } else {
+      document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto'; // Clean up when the component is unmounted
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
+    <div className="fixed inset-0 flex items-center justify-center  z-[10000]">
       {/* Overlay */}
       <div 
         className="fixed inset-0 bg-black opacity-50 z-40" 
@@ -15,8 +27,8 @@ export default function Modal({ isOpen, onClose }) {
 
       {/* Modal */}
       <div 
-        className="relative bg-[#141819] text-white border-4 border-[#F66C3B] rounded-lg p-6 max-w-lg w-full z-50"
-        onClick={(e) => e.stopPropagation()} // Ensure the modal content remains interactive
+        className="relative sm:mt-10 bg-[#141819] text-white border-4 border-[#F66C3B] rounded-lg p-6 max-w-md w-full z-50"
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button 
@@ -31,8 +43,8 @@ export default function Modal({ isOpen, onClose }) {
           <Image 
             src="/assets/images/deadpool.png" 
             alt="Baadlo 4.0" 
-            width={400} 
-            height={300} 
+            width={320} 
+            height={240} 
             className="rounded-lg" 
           />
         </div>
@@ -40,7 +52,7 @@ export default function Modal({ isOpen, onClose }) {
         {/* Explore Event Button */}
         <div className="flex justify-center">
           <button 
-            className="red-hat-display-heading explore-btn outline-1 cursor-pointer text-[#F17522] rounded-xl px-4 py-2 bg-[#141819] border-4 text-2xl border-[#F17522]"
+            className="red-hat-display-heading explore-btn outline-1 cursor-pointer text-[#F17522] rounded-xl px-4 py-2 bg-[#141819] border-4 text-xl border-[#F17522]"
             onClick={onClose}
           >
             Explore Event

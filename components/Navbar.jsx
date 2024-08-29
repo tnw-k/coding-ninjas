@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav className="flex-row items-center justify-center bg-black relative bg-cover bg-no-repeat bg-center text-white overflow-hidden" style={{ height: '100px' }}>
-      <div className="container mx-auto flex items-center justify-between relative z-20" style={{ marginTop: '-20px' }}> 
-        <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="Logo" width={150} height={150} className="mr-2 z-30 relative ml-5" />
+    <nav className="flex items-center z-10 justify-center absolute w-full bg-cover bg-no-repeat bg-center bg-[#141819] text-white" style={{ height: '90px' }}>
+      <div className="container mx-auto flex items-center justify-between relative z-20"> 
+        <Link href="/" className="flex justify-center items-center">
+          <Image src="/assets/images/logo.png" alt="Logo" width={50} height={50} className="mr-2 z-30 relative ml-5" />
         </Link>
         <div className="flex justify-center flex-1 space-x-4 nav-items z-10">
           <NavItem href="/" text="Home" />
@@ -15,8 +15,6 @@ const Navbar = () => {
           <NavItem href="/contact" text="Contact us" />
           <NavItem href="/about" text="About Us" />
         </div>
-      </div>
-      <div className="absolute inset-0 z-0 bg-cover bg-no-repeat bg-center puzzle-background">
       </div>
     </nav>
   );
@@ -34,6 +32,3 @@ const NavItem = ({ href, text }) => (
 );
 
 export default Navbar;
-
-
-
