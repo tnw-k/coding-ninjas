@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer
-      className="relative bg-cover bg-no-repeat bg-center w-full min-h-[590px] text-white py-10"
+      id="contact" className="relative bg-cover bg-no-repeat bg-center w-full min-h-[450px] text-white py-10" // Adjusted height to 400px
       style={{ backgroundImage: "url('/footer.png')" }}
     >
       <div className="absolute inset-0 bg-black opacity-75"></div>
@@ -29,8 +29,8 @@ export default function Footer() {
             <div className="mr-16 mb-8 md:mb-0 ml-[-650px]">
               <h2 className="text-[#F17522] font-bold text-[24px] md:text-[30px] mb-4">About us</h2>
               <div className="text-[#E3E3E3]/[0.65] text-[15px] md:text-[15px] leading-loose flex-col">
-                <p><a href="#">link 1</a></p>
-                <p><a href="#">link 2</a></p>
+                <p><a href="#about-us">Info</a></p>
+                
               </div>
             </div>
 
@@ -39,13 +39,12 @@ export default function Footer() {
               <div className="text-[#E3E3E3]/[0.65] text-[15px] md:text-[15px] leading-loose">
                 <p>Phone: +91-9051662628</p>
                 <p> Email: queries.codingninjaskiitchapter@gmail.com</p>
-                
               </div>
             </div>
           </div>
         </div>
 
-       
+        
         <SocialMediaLinks />
         
       </div>
@@ -68,4 +67,3 @@ const SocialMediaLinks = () => {
     </div>
   );
 };
-
