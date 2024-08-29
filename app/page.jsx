@@ -5,6 +5,7 @@ import Events from "@components/Events/Events"
 import Hero from "@components/Hero"
 import Popup from "@components/Popup";
 import AboutUs from '@components/AboutUs';
+import OurNinjas from '@components/OurNinjas';
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
         <Hero />
         <AboutUs/>
         <Events />
+        <OurNinjas/>
     </div>
   )
 }
