@@ -5,6 +5,7 @@ import Events from "@components/Events/Events"
 import Hero from "@components/Hero"
 import Popup from "@components/Popup";
 import AboutUs from '@components/AboutUs';
+import RecentEvents from '@components/Events/RecentEvents';
 
 const Home = () => {
 
@@ -22,7 +23,9 @@ const Home = () => {
     <div className="w-full text-white">
         <Popup isOpen={isModalOpen} onClose={closeModal} />
         <Hero />
+        <RecentEvents/>
         <AboutUs/>
+
         <Events />
     </div>
   )
