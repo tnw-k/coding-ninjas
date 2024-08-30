@@ -27,24 +27,24 @@ export default function Modal({ isOpen, onClose }) {
 
       {/* Modal */}
       <div 
-        className="relative sm:mt-14 bg-[#141819] text-white border-4 border-[#F66C3B] rounded-xl p-6 max-w-md w-full z-50"
+        className="relative sm:mt-14 bg-[#141819] text-white border-4 border-[#F66C3B] rounded-xl p-6 max-w-sm w-full z-50"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
-        <button 
+        <Link href="#upcoming-event"><button 
           onClick={onClose} 
           className="absolute flex justify-center items-center p-2 top-2 right-2 h-fit w-fit rounded-full bg-white bg-opacity-10 text-white font-bold"
         >
           <FaTimes />
-        </button>
+        </button></Link>
 
         {/* Image */}
         <div className="flex justify-center mb-4">
           <Image 
             src="/assets/images/deadpool.png" 
             alt="Baadlo 4.0" 
-            width={320} 
-            height={240} 
+            width={256} 
+            height={192} 
             className="rounded-lg" 
           />
         </div>

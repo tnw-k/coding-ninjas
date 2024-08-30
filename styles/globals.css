@@ -36,7 +36,7 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .title-animation{
+  /* .title-animation{
      color: #F66C3B;  
     line-height: 1.1; 
     background: linear-gradient(to bottom right, #F66C3B,#F66C3B, #FBB59D,#F66C3B, #F66C3B); 
@@ -44,8 +44,7 @@
     -webkit-background-clip: text;
     color: transparent;
      animation: titleAnimation 5s linear infinite;
-  
-  }
+  } */
   @keyframes titleAnimation{
     0%{
       background-position: top left;
@@ -68,10 +67,20 @@
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     
   }
-  .title-div{
-    box-shadow: 15px 15px 30px rgba(241, 117, 34, 0.6); 
-    transform: translateY(-2px); 
+  .title-animation::before {
+    content: "Coding Ninjas: KIIT Chapter"; /* Copy the text */
+  position: absolute;
+  top: 20;
+  left: 20;
+  right: 0;
+  bottom: 0;
+  color: rgb(249, 102, 4); /* Color for the shadow */
+  z-index: -1; /* Place behind the text */
+  filter: blur(5px); /* Blur for shadow effect */
+  opacity: 0.5; /* Adjust shadow opacity */
+  pointer-events: none; /* Ignore pointer events on shadow */
   }
+
   .explore-btn:hover {
     box-shadow: 0 8px 16px rgba(241, 117, 34, 0.6); 
     transform: translateY(-2px); 
