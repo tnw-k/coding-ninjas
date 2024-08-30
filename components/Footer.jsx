@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="relative bg-cover bg-no-repeat bg-center w-full min-h-[450px] text-white py-10"
-      style={{ backgroundImage: "url('/footer.png')" }}
+      className="relative bg-cover bg-no-repeat bg-center w-full min-h-[50vh] text-white py-10"
+      style={{ backgroundImage: "url('/footer.png')" , backgroundPosition:'bottom'}}
     >
       <div className="absolute inset-0 bg-black opacity-75"></div>
       
