@@ -1,19 +1,35 @@
-"use client";  
+"use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex items-center z-10 justify-between w-full bg-[#141819] text-white relative" style={{ height: '90px' }}>
+    <nav className={`flex items-center z-10 justify-between w-full ${isScrolled ? 'bg-[#141819] bg-opacity-60 backdrop-blur-md' : 'bg-transparent'} text-white fixed top-0 left-0 right-0 transition-colors duration-300 ease-in-out`} style={{ height: '90px' }}>
       <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-10 relative z-20">
         <Link href="/" className="flex justify-center items-center">
           <Image
@@ -25,16 +41,16 @@ const Navbar = () => {
           />
         </Link>
 
-       
         <div className="hidden lg:flex justify-center flex-1 space-x-4 nav-items z-10">
           <NavItem href="#home" text="Home" />
-          <NavItem href="#events" text="Events" />
-          <NavItem href="#domain" text="Domain" />
-          <NavItem href="#contact" text="Contact us" />
           <NavItem href="#about-us" text="About Us" />
+
+          <NavItem href="#domain" text="Domain" />
+          <NavItem href="#events" text="Events" />
+
+          <NavItem href="#contact" text="Contact us" />
         </div>
 
-        
         <div className="lg:hidden flex items-center">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
             {isOpen ? (
@@ -46,7 +62,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      
       {isOpen && (
         <div className="lg:hidden flex flex-col items-center absolute top-[90px] left-0 right-0 bg-[#141819] z-10">
           <NavItem href="#home" text="Home" />
