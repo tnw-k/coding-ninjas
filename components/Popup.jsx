@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
-import Link from 'next/link';
 export default function Modal({ isOpen, onClose }) {
   useEffect(() => {
     if (isOpen) {
@@ -32,16 +31,12 @@ export default function Modal({ isOpen, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
-<<<<<<< HEAD
-        <Link href="upcoming-event"><button 
-=======
-        <Link href=""><button 
->>>>>>> origin/test
+        <button 
           onClick={onClose} 
           className="absolute flex justify-center items-center p-2 top-2 right-2 h-fit w-fit rounded-full bg-white bg-opacity-10 text-white font-bold"
         >
           <FaTimes />
-        </button></Link>
+        </button>
 
         {/* Image */}
         <div className="flex justify-center mb-4">

@@ -39,21 +39,12 @@ const RecentEvents = () => {
   });
 
   return (
-<<<<<<< HEAD
-    <div id="upcoming-event" className="rounded-lg mt-20 p-2  border-2 border-[#F66C3B] px-8 shadow-sm bg-Advertise mx-20">
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex flex-col w-[600px]">
-          <div className="flex items-center">
-            <span className=""><Image src="/logo.png" alt="Coding Ninjas" width={70} height={70}></Image></span>
-            <h2 className="text-2xl font-bold text-orange-600">Coding Ninjas TechVarsity</h2>
-=======
-    <div className="rounded-lg mt-20 p-2  border-2 border-[#F66C3B] sm:px-4 px-8 lg:px-8 shadow-sm bg-Advertise xl:mx-20">
+    <div id="upcoming-event"  className="rounded-lg mt-20 p-2  border-2 border-[#F66C3B] sm:px-4 px-8 lg:px-8 shadow-sm bg-Advertise xl:mx-20">
       <div className="sm:flex-row flex flex-col items-center justify-between mb-4">
         <div className="flex flex-col lg:w-[600px] sm:w-[390px]">
           <div className="flex items-center mb-4">
             <span className=""><Image src="/assets/images/logo.png" alt="Coding Ninjas" className="mr-4" width={50} height={50}></Image></span>
             <h2 className="text-3xl font-bold text-orange-600">Badlav</h2>
->>>>>>> origin/test
           </div>
           <p className="text-gray-800 lg:text-[16px] sm:text-sm  font-semibold text-justify">
 
