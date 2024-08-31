@@ -81,7 +81,7 @@ const ProfileCard = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    autoplay: false, // Disable autoplay for this breakpoint as well
+                    autoplay: false, 
                 }
             }
         ]
@@ -96,7 +96,7 @@ const ProfileCard = () => {
                             <div className=' w-30 h-auto rounded-t-xl flex justify-center items-center'>
                                 <img className='h-20 w-20 p-1 rounded-full' src={d.img} alt={d.name}></img>
                             </div>
-                            <div className='flex flex-col justify-center items-center gap-2 p-4'>
+                            <div className='flex flex-col justify-center text-center items-center gap-2 p-4'>
                                 <h3 className='ninjaname'>{d.name}</h3>
                                 <p className='ninjades'>{d.designation}</p>
                             </div>
