@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
 
@@ -31,7 +32,7 @@ export default function Modal({ isOpen, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
-        <Link href="#upcoming-event"><button 
+        <Link href="upcoming-event"><button 
           onClick={onClose} 
           className="absolute flex justify-center items-center p-2 top-2 right-2 h-fit w-fit rounded-full bg-white bg-opacity-10 text-white font-bold"
         >

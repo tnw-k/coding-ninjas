@@ -37,7 +37,7 @@ const RecentEvents = () => {
   });
 
   return (
-    <div className="rounded-lg mt-20 p-2  border-2 border-[#F66C3B] px-8 shadow-sm bg-Advertise mx-20">
+    <div id="upcoming-event" className="rounded-lg mt-20 p-2  border-2 border-[#F66C3B] px-8 shadow-sm bg-Advertise mx-20">
       <div className="flex items-center justify-between mb-4">
         <div className="flex flex-col w-[600px]">
           <div className="flex items-center">
