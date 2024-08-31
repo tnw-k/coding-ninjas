@@ -253,3 +253,6 @@ box-shadow: 0 4px 8px rgba(241, 117, 34, 0.4);
   vertical-align: top;
 }
 
+.blur-nav{
+  backdrop-filter: blur(15px); ;
+}
