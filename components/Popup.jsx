@@ -31,7 +31,7 @@ export default function Modal({ isOpen, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
-        <Link href="#upcoming-event"><button 
+        <Link href=""><button 
           onClick={onClose} 
           className="absolute flex justify-center items-center p-2 top-2 right-2 h-fit w-fit rounded-full bg-white bg-opacity-10 text-white font-bold"
         >
@@ -55,8 +55,7 @@ export default function Modal({ isOpen, onClose }) {
             className="red-hat-display-heading explore-btn outline-1 cursor-pointer text-[#F17522] rounded-xl px-4 py-2 bg-[#141819] border-4 text-xl border-[#F17522]"
             onClick={onClose}
           >
-            Explore Event
-          </button>
+Register Now          </button>
         </div>
       </div>
     </div>
