@@ -87,9 +87,9 @@ const ProfileCard = () => {
         ]
     };
     return (
-        <div className='w-3/4 h-auto m-auto'>
-            <div className=' my-20 '>
-                <h2 className='  sm:text-5xl text-4xl font-bold event-title text-center mb-20'>Our Ninjas</h2>
+        <div className='w-3/4 h-auto m-auto '>
+            <div className=' mb-20 mt-14 '>
+                <h2 className='  sm:text-5xl text-4xl font-bold event-title text-center mb-20 sm:mb-28'>Our Ninjas</h2>
                 <Slider {...settings}>
                     {Profiles.map((d) => (
                         <div className='bg-gradient-to-t from-blue-600 to-black text-white-500 h-[200px] rounded-xl '>
