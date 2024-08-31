@@ -44,7 +44,7 @@ const RecentEvents = () => {
             <span className=""><Image src="/logo.png" alt="Coding Ninjas" width={70} height={70}></Image></span>
             <h2 className="text-2xl font-bold text-orange-600">Coding Ninjas TechVarsity</h2>
           </div>
-          <p className="text-gray-800 text-sm">
+          <p className="text-gray-800 text-sm font-medium">
             Complete             Complete CS Education to transform you into a 10X Developer
             Complete CS Education to transform you into a 10X Developer
             Complete CS Education to transform you into a 10X Developer
