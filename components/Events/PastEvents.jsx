@@ -32,7 +32,7 @@ const TimelineItem = ({ item, index }) => {
 
   return (
     <div className="flex ">
-      <div className='bg-eventCard lg:w-[700px] sm:w-[600px] w-80  rounded-xl py-4 m-4 my-4 px-6 flex flex-col items-center'>
+      <div className='bg-pastevent lg:w-[700px] sm:w-[600px]  border-orange-400 border rounded-xl py-4 m-4 my-4 px-6 flex flex-col items-center'>
         <li className="">
           <span className="absolute flex items-center justify-center w-10 h-10 bg-orange-500 rounded-full -start-4  ring-8 ring-white dark:ring-[#141819] ">
 
@@ -66,7 +66,7 @@ const TimelineItem = ({ item, index }) => {
 
 const Timeline = () => {
   return (
-    <ol className="relative border-s-2 pt-20 border-gray-600 ">
+    <ol className="relative border-s-2 pt-10 mt-10 border-gray-600 ">
       {timelineData.map((item, index) => (
         <TimelineItem key={index} item={item} index={index} />
       ))}
