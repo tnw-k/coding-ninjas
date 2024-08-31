@@ -51,9 +51,7 @@ const ProfileCard = () => {
     var settings = {
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        pauseOnHover: true,
+        autoplay: false, 
         dots: true,
         infinite: true,
         speed: 2000,
@@ -66,9 +64,7 @@ const ProfileCard = () => {
                     slidesToScroll: 3,
                     infinite: true,
                     dots: true,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    pauseOnHover: true,
+                    autoplay: false,
                 }
             },
             {
@@ -77,9 +73,7 @@ const ProfileCard = () => {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     initialSlide: 2,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    pauseOnHover: true,
+                    autoplay: false,
                 }
             },
             {
@@ -87,24 +81,22 @@ const ProfileCard = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    pauseOnHover: true,
+                    autoplay: false, 
                 }
             }
         ]
     };
     return (
-        <div className='w-3/4 h-auto m-auto'>
-            <div className='mt-[10%] '>
-                <h2 className='  text-xl flex justify-center font-mono m-10'>Our Ninjas</h2>
+        <div className='w-3/4 h-auto m-auto '>
+            <div className=' mb-20 mt-14 '>
+                <h2 className='  sm:text-5xl text-4xl font-bold event-title text-center mb-20 sm:mb-28'>Our Ninjas</h2>
                 <Slider {...settings}>
                     {Profiles.map((d) => (
                         <div className='bg-gradient-to-t from-blue-600 to-black text-white-500 h-[200px] rounded-xl '>
                             <div className=' w-30 h-auto rounded-t-xl flex justify-center items-center'>
-                                <img className='h-20 w-20 p-1 rounded-full' src={d.img} alt="/"></img>
+                                <img className='h-20 w-20 p-1 rounded-full' src={d.img} alt={d.name}></img>
                             </div>
-                            <div className='flex flex-col justify-center items-center gap-2 p-4'>
+                            <div className='flex flex-col justify-center text-center items-center gap-2 p-4'>
                                 <h3 className='ninjaname'>{d.name}</h3>
                                 <p className='ninjades'>{d.designation}</p>
                             </div>
@@ -116,4 +108,4 @@ const ProfileCard = () => {
     );
 }
 
-export default ProfileCard
+export default ProfileCard;
