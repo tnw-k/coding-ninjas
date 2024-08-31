@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import Image from 'next/image';
 import { FaTimes } from 'react-icons/fa';
-
+import Link from 'next/link';
 export default function Modal({ isOpen, onClose }) {
   useEffect(() => {
     if (isOpen) {
